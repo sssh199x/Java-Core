@@ -1,0 +1,102 @@
+
+Now let's try to understand what is there inside the JVM,JVM is where you execute your byte code right? Now the question is how exactly are we going to execute the code? Ofcourse there is something called a runtime or the runner which will do that.Here we will focus more on the memory level.
+- What happens when you create the variable ?
+- What happens when you store the variable ?
+
+In your memory or inside the JVM memory, we have two parts i.e (Stack And Heap Memory)
+
+Detailed JVM Memory Structure:::
+
++-----------------------------------+
+|               JVM                 |
+|  +-----------------------------+  |
+|  |           Stack             |  |
+|  |  +-----------------------+  |  |
+|  |  |       Thread 1        |  |  |
+|  |  |  +-----------------+  |  |  |
+|  |  |  |     Frame 1     |  |  |  |
+|  |  |  |  +-----------+  |  |  |  |
+|  |  |  |  | Local Var |  |  |  |  |
+|  |  |  |  | Operand   |  |  |  |  |
+|  |  |  |  | Stack     |  |  |  |  |
+|  |  |  |  +-----------+  |  |  |  |
+|  |  |  +-----------------+  |  |  |
+|  |  |  |     Frame 2     |  |  |  |
+|  |  |  |  +-----------+  |  |  |  |
+|  |  |  |  | Local Var |  |  |  |  |
+|  |  |  |  | Operand   |  |  |  |  |
+|  |  |  |  | Stack     |  |  |  |  |
+|  |  |  |  +-----------+  |  |  |  |
+|  |  |  +-----------------+  |  |  |
+|  |  |  |      ...        |  |  |  |
+|  |  |  +-----------------+  |  |  |
+|  |  +-----------------------+  |  |
+|  |  |       Thread 2        |  |  |
+|  |  |  +-----------------+  |  |  |
+|  |  |  |     Frame 1     |  |  |  |
+|  |  |  |  +-----------+  |  |  |  |
+|  |  |  |  | Local Var |  |  |  |  |
+|  |  |  |  | Operand   |  |  |  |  |
+|  |  |  |  | Stack     |  |  |  |  |
+|  |  |  |  +-----------+  |  |  |  |
+|  |  |  +-----------------+  |  |  |
+|  |  |  |      ...        |  |  |  |
+|  |  |  +-----------------+  |  |  |
+|  |  +-----------------------+  |  |
+|  +-----------------------------+  |
+|                                   |
+|  +-----------------------------+  |
+|  |            Heap             |  |
+|  |  +-----------------------+  |  |
+|  |  |       Object 1        |  |  |
+|  |  |  +-----------------+  |  |  |
+|  |  |  |   Instance Var  |  |  |  |
+|  |  |  +-----------------+  |  |  |
+|  |  +-----------------------+  |  |
+|  |  |       Object 2        |  |  |
+|  |  |  +-----------------+  |  |  |
+|  |  |  |   Instance Var  |  |  |  |
+|  |  |  +-----------------+  |  |  |
+|  |  +-----------------------+  |  |
+|  |  |          ...          |  |  |
+|  |  +-----------------------+  |  |
+|  +-----------------------------+  |
++-----------------------------------+
+
+
+
+Explanation
+1.JVM (Java Virtual Machine):
+
+- The JVM is the runtime environment for executing Java bytecode. It includes the stack and heap memory areas.
+
+2.Stack Memory:
+
+- The stack is used for static memory allocation and thread execution.
+- Each thread has its own stack, which contains multiple frames.
+- Each frame corresponds to a method call and contains:
+    * Local Variables: Stores method parameters and local variables.
+    * Operand Stack: Used for intermediate calculations and storing temporary data.
+    * Frames are pushed onto the stack when methods are called and popped off when methods return.
+
+3.Heap Memory:
+
+- The heap is used for dynamic memory allocation of Java objects and arrays.
+- All objects and their instance variables are stored in the heap.
+- The heap is shared among all threads.
+- The garbage collector manages the heap memory, reclaiming memory used by objects that are no longer reachable.
+
+Key Points
+
+- Stack:
+
+Stores primitive data types and references to objects.
+Memory is automatically managed when methods are called and return.
+Faster access compared to heap memory.
+
+- Heap:
+
+Stores objects and arrays.
+Memory is managed by the garbage collector.
+Slower access compared to stack memory due to dynamic allocation and deallocation.
+This detailed visualization should help you better understand the memory management in Java.
