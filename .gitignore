@@ -89,3 +89,6 @@ Desktop.ini
 *.tmp
 *.bak
 *.swp
+
+# Development guide (for local reference only, not for version control)
+REPOSITORY_GUIDE.md
