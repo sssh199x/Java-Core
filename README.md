@@ -4,99 +4,105 @@ This repository contains Java learning materials organized in a progressive lear
 
 ## 📚 Learning Structure
 
-### 01_hello_world
+### helloworld
 - **HelloWorld.java** - Your first Java program
 - Introduction to the `main` method and `System.out.println()`
 
-### 02_data_types
-- **DataTypes.java** - Comprehensive guide to Java data types
-- Covers primitive types (int, double, boolean, char, etc.)
-- Explains reference types and type casting
+### datatypes
+Comprehensive guide to Java data types:
+- **primitive/** - Primitive types (int, double, boolean, char, etc.)
+- **reference/** - Reference types (String, arrays, objects)
+- **casting/** - Type casting (widening and narrowing)
+- **DataTypesGuide.md** - Complete reference guide
 
-### 03_variables
+### variables
 Organized into subfolders covering different variable types:
 
-- **01_local_variables/**
+- **local/**
   - `LocalVariables.java` - Understanding local variables and scope
   - `Variables.java` - Basic variable operations
   
-- **02_instance_variables/**
+- **instance/**
   - `InstanceVariables.java` - Instance variables and object-specific data
   
-- **03_static_variables/**
+- **static_vars/**
   - `StaticVariables.java` - Static variables shared across all objects
   
 - **exercises/**
-  - `VariableExercises.java` - Practice problems for variables
+  - `SimpleVariableExamples.java` - Practice problems for variables
 
-### 04_expressions_statements_blocks
+### expressions_statements_blocks
 Fundamental building blocks of Java programs:
-- **01_expressions/** - Understanding expressions
-- **02_statements/** - Working with statements
-- **03_code_blocks/** - Code block scope
-- **04_control_flow/01_conditional_statements/** - If/else statements, boolean logic
-- **05_methods/01_basic_methods/** - Method creation and usage
+- **expressions/** - Understanding expressions
+- **statements/** - Working with statements
+- **code_blocks/** - Code block scope
+- **control_flow/conditional_statements/** - If/else statements, boolean logic
+- **methods/basic_methods/** - Method creation and usage
 - **exercises/** - Practice problems
 
-### 05_conditional_logic_loops_interactive
+### conditional_logic_loops_interactive
 Mastering Conditional Logic, Loops, And Interactive Java Applications:
-- **01_loops/** - for, while, do-while, enhanced for loops
-- **02_advanced_conditionals/** - Switch statements, ternary operators, complex logic
-- **03_interactive_applications/** - User input, interactive menus, input validation
+- **loops/** - for, while, do-while, enhanced for loops
+- **advanced_conditionals/** - Switch statements, ternary operators, complex logic
+- **interactive_applications/** - User input, interactive menus, input validation
 - **exercises/** - Practice problems for loops and interactive applications
 
-### 06_arrays
+### arrays
 Comprehensive array learning with multiple examples:
 
-- **01_basic_arrays/**
+- **basic/**
   - `ArrayDemo.java` - Introduction to arrays
   - `BasicArrayExample.java` - Basic array operations
   - `ArrayInitialization.java` - Different ways to initialize arrays
   
-- **02_multidimensional_arrays/**
+- **multidimensional/**
   - `MultiDimensionalArray.java` - Working with 2D arrays
   - `TwoDArrayExample.java` - Advanced 2D array operations
   
-- **03_jagged_arrays/**
+- **jagged/**
   - `JaggedArray.java` - Understanding jagged arrays
   - `JaggedArrayExample.java` - Practical jagged array examples
   
 - **exercises/**
-  - `ArrayExercises.java` - Practice problems (find max, min, sum, reverse, etc.)
+  - `SimpleArrayExamples.java` - Practice problems (find max, min, sum, reverse, etc.)
 
-### 07_classes_and_objects
+### classes_and_objects
 Learn about classes and objects through multiple examples:
 
-- **01_basic_class/**
+- **basic/**
   - `BasicClass.java` - Creating your first class
-  - `DemoClass.java` - Class and object fundamentals
+  - `Car.java` - Car class example with encapsulation
+  - `BankAccount.java` - Bank account class example
+  - `Main.java` - Main class for running examples
   
-- **02_methods/**
+- **methods/**
   - `MethodsExample.java` - Instance methods, static methods, parameters, return values
   
-- **03_static_keyword/**
+- **static_keyword/**
   - `StaticKeyword.java` - Understanding static variables, methods, and blocks
   
 - **exercises/**
-  - `ClassExercises.java` - Practice creating Student, BankAccount, and Car classes
+  - `SimpleClassExamples.java` - Practice creating classes
+  - `Person.java` - Person class example
+  - `SimpleCalculator.java` - Calculator class example
 
-### 08_constructors
+### constructors
 Master constructors with different types:
 
-- **01_default_constructor/**
+- **default_constructor/**
   - `DefaultConstructor.java` - Default constructors with no parameters
   
-- **02_parameterized_constructor/**
+- **parameterized/**
   - `Human.java` - Parameterized constructors with validation
   - `ConstructorDemo.java` - Demonstrating constructor usage
   
-- **03_constructor_chaining/**
+- **constructor_chaining/**
   - `ConstructorChaining.java` - Calling one constructor from another using 'this'
   
 - **exercises/**
-  - `ConstructorExercises.java` - Practice creating Book, Rectangle, and Person classes
+  - `SimpleConstructorExamples.java` - Practice creating constructors
 
-### 09_method_overloading
+### method_overloading
 Learn method overloading through examples:
 
 - **examples/**
@@ -126,13 +132,18 @@ Learn method overloading through examples:
 
 1. Navigate to any directory to explore the concepts
 2. Each concept folder contains:
-   - **Numbered subfolders** - Organized learning progression
+   - **Subfolders** - Organized by topic
    - **Multiple examples** - Different scenarios and use cases
    - **Exercises folder** - Practice problems to test your understanding
 3. Compile and run Java files using:
    ```bash
-   javac *.java
-   java ClassName
+   # From the project root
+   javac path/to/ClassName.java
+   java package.path.ClassName
+   
+   # Example:
+   javac expressions_statements_blocks/methods/basic_methods/SpeedConverter.java
+   java expressions_statements_blocks.methods.basic_methods.SpeedConverter
    ```
 
 ## 📝 Notes
