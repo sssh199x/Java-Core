@@ -106,13 +106,13 @@ Learn method overloading through examples:
 - **exercises/**
   - `OverloadingExercises.java` - Practice creating MathUtils, Printer, and Calculator classes
 
-### 10_memory_management
+### memory_management
 - **StackAndHeapMemory.md** - Understanding JVM memory structure
 - Stack memory vs Heap memory
 - How Java manages memory for variables and objects
 - Detailed visualization of JVM memory structure
 
-### 11_projects
+### projects
 - **quiz/** - Quiz Application
   - A practical project combining multiple Java concepts
   - Uses classes, arrays, user input, and methods
@@ -140,7 +140,7 @@ Learn method overloading through examples:
 - All `.class` files are excluded from version control (they're generated during compilation)
 - Each concept builds upon previous ones
 - Exercises are provided for hands-on practice
-- The quiz project in `11_projects` demonstrates practical application of all concepts
+- The quiz project in `projects` demonstrates practical application of all concepts
 
 ## 🎯 Learning Path
 

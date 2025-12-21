@@ -1,4 +1,4 @@
-package variables;
+package variables.local;
 
 /**
  * Learning about Variables in Java

@@ -1,5 +1,4 @@
 package arrays.multidimensional;
-
 /**
  * Two-Dimensional Array Examples
  * Demonstrates various operations with 2D arrays.
