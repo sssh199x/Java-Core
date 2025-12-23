@@ -19,17 +19,29 @@ public class Main {
 
         System.out.println("--------------------------------------------");
 
+        BankAccount defaultBankAccount = new BankAccount();
+        System.out.println("Default constructor called");
+        System.out.println("Customer Name: " + defaultBankAccount.getCustomerName());
+        System.out.println("Account Number: " + defaultBankAccount.getAccountNumber());
+        System.out.println("Email: " + defaultBankAccount.getEmail());
+        System.out.println("Phone Number: " + defaultBankAccount.getPhoneNumber());
+        System.out.println("Balance: " + defaultBankAccount.getBalance());
 
-        BankAccount bobsBankAccount = new BankAccount();
-        bobsBankAccount.setCustomerName("Sandesh Hamal");
+        System.out.println("--------------------------------------------");
+
+
+        BankAccount bobsBankAccount = new BankAccount("123456", "Bob Brown","sandeshhamal5890@gmail.com", "+977 9815141345", BigDecimal.valueOf(0));
         System.out.println("Customer Name: " + bobsBankAccount.getCustomerName());
-        bobsBankAccount.setAccountNumber("123456");
         System.out.println("Account Number: " + bobsBankAccount.getAccountNumber());
-        bobsBankAccount.setEmail("sandeshhamal5890@gmail.com");
         System.out.println("Email: " + bobsBankAccount.getEmail());
-        bobsBankAccount.setPhoneNumber("+977 9815141345");
         System.out.println("Phone Number: " + bobsBankAccount.getPhoneNumber());
         bobsBankAccount.deposit(BigDecimal.valueOf(1000));
         bobsBankAccount.withdraw(BigDecimal.valueOf(500));
+
+        System.out.println("--------------------------------------------");
+        BankAccount timsAccount = new BankAccount("Tim Smith", "timsmith@gmail.com","+977 9800000000");
+        System.out.println("Customer Name: " + timsAccount.getCustomerName());
+        System.out.println("Email: " + timsAccount.getEmail());
+        System.out.println("Phone Number: " + timsAccount.getPhoneNumber());
     }
 }

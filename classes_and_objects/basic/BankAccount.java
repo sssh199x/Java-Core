@@ -9,6 +9,24 @@ public class BankAccount {
     private String email;
     private String phoneNumber;
 
+    public BankAccount() {
+        this("000000", "Default Name", "Default Email ", "Default Phone", BigDecimal.ZERO);
+
+    }
+    public BankAccount(String accountNumber, String customerName, String email, String phoneNumber, BigDecimal initialBalance) {
+        System.out.println("Parameterized constructor called");
+        this.accountNumber = accountNumber;
+        this.customerName = customerName;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
+        this.balance = initialBalance;
+    }
+
+    public BankAccount(String customerName, String email, String phoneNumber) {
+        this("99999", customerName, email, phoneNumber, BigDecimal.ZERO);
+        System.out.println("Partial parameterized constructor called");
+    }
+
     public String getAccountNumber() {
         return accountNumber;
     }
