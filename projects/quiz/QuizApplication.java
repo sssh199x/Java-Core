@@ -1,4 +1,6 @@
-package quiz;
+package projects.quiz;
+
+import projects.quiz.QuestionService;
 
 /**
  * Main Quiz Application

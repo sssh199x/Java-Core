@@ -1,4 +1,4 @@
-package quiz;
+package projects.quiz;
 
 import java.util.Scanner;
 
@@ -8,19 +8,19 @@ import java.util.Scanner;
  */
 public class QuestionService {
     int score = 0;
-    Question[] listQuestions = new Question[5];
+    quiz.Question[] listQuestions = new quiz.Question[5];
     String[] userInput = new String[5];
 
     public QuestionService() {
-        listQuestions[0] = new Question(1, "What is the capital of Nepal?",
+        listQuestions[0] = new quiz.Question(1, "What is the capital of Nepal?",
                 new String[] { "Pokhara", "Kathmandu", "Chitwan", "Hetauda" }, "Kathmandu");
-        listQuestions[1] = new Question(2, "How many eyes do Spiders have?", new String[] { "0", "1", "2", "3" }, "3");
-        listQuestions[2] = new Question(3, "What is the largest planet in our solar system?",
+        listQuestions[1] = new quiz.Question(2, "How many eyes do Spiders have?", new String[] { "0", "1", "2", "3" }, "3");
+        listQuestions[2] = new quiz.Question(3, "What is the largest planet in our solar system?",
                 new String[] { "Earth", "Mars", "Jupiter", "Saturn" }, "Jupiter");
-        listQuestions[3] = new Question(4, "Who wrote 'Romeo and Juliet'?",
+        listQuestions[3] = new quiz.Question(4, "Who wrote 'Romeo and Juliet'?",
                 new String[] { "William Shakespeare", "Charles Dickens", "Mark Twain", "Jane Austen" },
                 "William Shakespeare");
-        listQuestions[4] = new Question(5, "What is the boiling point of water?",
+        listQuestions[4] = new quiz.Question(5, "What is the boiling point of water?",
                 new String[] { "90deg C", "100deg C", "110deg C", "120deg C" }, "100deg C");
     }
 
