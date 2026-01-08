@@ -1,24 +1,23 @@
 package computer_factory;
 
 public class PersonalComputer extends Product {
+    private ComputerCase computerCase;
     private Monitor monitor;
     private MotherBoard motherBoard;
-    private ComputerCase computerCase;
 
-
-    public PersonalComputer(String model, String manufacturer, Monitor monitor, MotherBoard motherBoard, ComputerCase computerCase) {
+    public PersonalComputer(String model, String manufacturer, ComputerCase computerCase, Monitor monitor, MotherBoard motherBoard) {
         super(model, manufacturer);
+        this.computerCase = computerCase;
         this.monitor = monitor;
         this.motherBoard = motherBoard;
-        this.computerCase = computerCase;
+    }
+
+    public ComputerCase getComputerCase() {
+        return computerCase;
     }
 
     public Monitor getMonitor() {
         return monitor;
-    }
-
-    public void setMonitor(Monitor monitor) {
-        this.monitor = monitor;
     }
 
     public MotherBoard getMotherBoard() {
