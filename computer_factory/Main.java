@@ -6,9 +6,10 @@ public class Main {
         Monitor theMonitor = new Monitor("27inch Beast", "Acer", 27, "2540x1440");
         MotherBoard theMotherBoard = new MotherBoard("BJ-200", "Asus", 4, 6, "v2.44");
 
-        PersonalComputer thePC = new PersonalComputer("2208","Dell", theCase, theMonitor, theMotherBoard);
-        thePC.getMonitor().drawPixelAt(19,13,"red");
-        thePC.getMotherBoard().loadProgram("Windows OS");
-        thePC.getComputerCase().pressPowerButton();
+        PersonalComputer thePC = new PersonalComputer("2208", "Dell", theCase, theMonitor, theMotherBoard);
+//        thePC.getMonitor().drawPixelAt(19,13,"red");
+//        thePC.getMotherBoard().loadProgram("Windows OS");
+//        thePC.getComputerCase().pressPowerButton();
+        thePC.powerUp();
     }
 }
