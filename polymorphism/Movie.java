@@ -7,6 +7,15 @@ public class Movie {
     public Movie(String title) {
         this.title = title;
     }
+    // Factory method
+    public static Movie getMovie(String type, String title) {
+        return switch (type.toUpperCase().charAt(0)) {
+            case 'A' -> new Adventure(title);
+            case 'C' -> new Comedy(title);
+            case 'S' -> new ScienceFiction(title);
+            default -> new Movie(title);
+        };
+    }
 
     public void watchMovie() {
         String instanceType = this.getClass().getSimpleName();
